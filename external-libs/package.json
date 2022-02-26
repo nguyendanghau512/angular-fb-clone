@@ -1,17 +1,15 @@
 {
-  "name": "angular-fb-clone",
+  "name": "external-libs",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
-    "@angular-architects/module-federation": "^14.1.1",
     "@angular/animations": "~13.2.0",
     "@angular/common": "~13.2.0",
     "@angular/compiler": "~13.2.0",
@@ -20,13 +18,12 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
-    "ngx-fb-chat-clone": "^0.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~13.2.4",
+    "@angular-devkit/build-angular": "~13.2.5",
     "@angular/cli": "~13.2.4",
     "@angular/compiler-cli": "~13.2.0",
     "@types/jasmine": "~3.10.0",
@@ -37,7 +34,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "ngx-build-plus": "^13.0.1",
+    "ng-packagr": "^13.0.0",
     "typescript": "~4.5.2"
   }
 }
