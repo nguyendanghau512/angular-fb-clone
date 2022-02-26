@@ -11,7 +11,8 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "mfeAd",
-    publicPath: "auto"
+    publicPath: "auto",
+    scriptType: 'text/javascript'
   },
   optimization: {
     runtimeChunk: false
@@ -28,18 +29,11 @@ module.exports = {
     new ModuleFederationPlugin({
         library: { type: "module" },
 
-        // For remotes (please adjust)
         name: "mfeAd",
         filename: "remoteEntry.js",
         exposes: {
             './TestviewModule': './/src/app/testview/testview.module.ts',
         },        
-        
-        // For hosts (please adjust)
-        // remotes: {
-        //     "mfe1": "http://localhost:3000/remoteEntry.js",
-
-        // },
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
