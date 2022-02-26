@@ -10,6 +10,9 @@ const routes: Routes = [
       remoteEntry: 'http://localhost:3000/remoteEntry.js',
       exposedModule: './TestviewModule'
     }).then(m => m.TestviewModule)
+  }, {
+    path: '',
+    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule),
   }
 ];
 
