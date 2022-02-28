@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxFbChatCloneModule } from 'ngx-fb-chat-clone';
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxFbChatCloneModule
+    NgxFbChatCloneModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
