@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { UIModule } from 'src/app/shared/ui-module/ui.module';
 import { ToolbarService } from './services/toolbar.service';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ToolbarService } from './services/toolbar.service';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    UIModule
+    UIModule,
+    SharedModule
   ],
   providers: [
     ToolbarService

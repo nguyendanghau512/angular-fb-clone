@@ -1,0 +1,29 @@
+{
+    "shared": {
+        "friends": "Friends",
+        "groups": "Groups",
+        "marketplace": "Marketplace",
+        "watch": "Watch",
+        "memories": "memories",
+        "saved": "Saved",
+        "pages": "Pages",
+        "events": "Events",
+        "mostRecent": "Most recent",
+        "favourites": "Favourites",
+        "ads": "Ads",
+        "bloodDonations": "Blood donations",
+        "climateScienceCentre": "Climate Science Centre",
+        "crisisResponse": "Crisis Response",
+        "emotionalHealth": "Emotional Health",
+        "facebookPay": "Facebook Pay",
+        "fundraisers": "Fundraisers",
+        "gamingVideo": "Gaming video",
+        "liveVideos": "Live videos",
+        "messenger": "Messenger",
+        "messengerKids": "Messenger Kids",
+        "playGames": "Play games",
+        "recentAdActivity": "Recent ad activity",
+        "translateFacebook": "Translate Facebook",
+        "weather": "Weather"
+    }
+}

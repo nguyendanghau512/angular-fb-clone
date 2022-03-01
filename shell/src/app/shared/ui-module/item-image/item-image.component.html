@@ -1,4 +1,4 @@
 <div *ngIf="item">
-    <img src="/assets/icons/{{item.iconURL}}" alt="{{item.code}}" width="28" height="28"> 
-    {{item.code}}
+    <img src="/assets/icons/{{item.iconURL}}" alt="{{item.code}}" width="28" height="28">
+    {{ i18n + item.code | translate }}
 </div>

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ItemListModel } from '../../model/item-list.model';
+import { i18nItemImageUI } from '../../shared.constants';
 
 @Component({
   selector: 'app-item-image',
@@ -8,7 +9,11 @@ import { ItemListModel } from '../../model/item-list.model';
 })
 export class ItemImageComponent implements OnInit {
   @Input() item!: ItemListModel;
-  constructor() { }
+  i18n = i18nItemImageUI;
+
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }
