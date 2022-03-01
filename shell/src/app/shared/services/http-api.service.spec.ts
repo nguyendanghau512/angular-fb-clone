@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { HttpApiService } from './http-api.service';
 
 describe('HttpApiService', () => {
-  let service: HttpApiService;
+  let service: HttpApiService<any[]>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ToolbarService } from '../../services/toolbar.service';
+import { ItemListModel } from '../../../../shared/model/item-list.model';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,7 +9,7 @@ import { ToolbarService } from '../../services/toolbar.service';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent implements OnInit {
-  itemList!: Observable<ArrayBuffer>;
+  itemList!: Observable<ItemListModel[]>;
   constructor(
     private readonly toolbarService: ToolbarService) {
   }

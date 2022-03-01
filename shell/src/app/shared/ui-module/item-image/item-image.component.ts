@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ItemListModel } from '../../model/item-list.model';
 
 @Component({
   selector: 'app-item-image',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./item-image.component.scss']
 })
 export class ItemImageComponent implements OnInit {
-  @Input() item: { code: string; } | undefined;
+  @Input() item!: ItemListModel;
   constructor() { }
 
   ngOnInit(): void {

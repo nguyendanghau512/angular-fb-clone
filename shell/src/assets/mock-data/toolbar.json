@@ -3,7 +3,7 @@
         "code":"friends"
     },
     {
-        "code":"groupds"
+        "code":"groups"
     },
     {
         "code":"marketplace"
@@ -33,10 +33,10 @@
         "code":"ads"
     },
     {
-        "code":"bloodDonation"
+        "code":"bloodDonations"
     },
     {
-        "code":"climateScienceCenter"
+        "code":"climateScienceCentre"
     },
     {
         "code":"crisisResponse"
@@ -63,7 +63,7 @@
         "code":"messengerKids"
     },
     {
-        "code":"playGame"
+        "code":"playGames"
     },
     {
         "code":"recentAdActivity"
