@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpOption } from '../model/http-option.model';
+import { catchError, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,9 @@ export class HttpApiService<T> {
     private http: HttpClient
   ) { }
   public get(url: string, options?: HttpOption) {
-    return this.http.get<T>(url, options);
+    return this.http.get<T>(url, options).pipe(
+      catchError(err => { throw err })
+    );
   }
   public post(url: string, data: any, options?: HttpOption) {
     return this.http.post<T>(url, data, options);

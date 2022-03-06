@@ -7,11 +7,12 @@ import { ItemListDTO } from 'src/app/shared/dto/item-list.dto';
 
 @Injectable()
 export class ToolbarService {
-
   constructor(private readonly HttpApiService: HttpApiService<ItemListDTO[]>) { }
 
-  getToolbarItems() {
+  getToolbarItems(to?: number, from = 0) {
+    //Todo: use query param instead
     return this.HttpApiService.get(API.getToolbarItem).pipe(
+      map((response) => response.slice(from, to)),
       map((response) => response.map((r) => new ItemListModel(r)))
     );
   }

@@ -4,7 +4,7 @@
         "groups": "Groups",
         "marketplace": "Marketplace",
         "watch": "Watch",
-        "memories": "memories",
+        "memories": "Memories",
         "saved": "Saved",
         "pages": "Pages",
         "events": "Events",
@@ -24,6 +24,8 @@
         "playGames": "Play games",
         "recentAdActivity": "Recent ad activity",
         "translateFacebook": "Translate Facebook",
-        "weather": "Weather"
+        "weather": "Weather",
+        "seeLess": "See less",
+        "seeMore": "See more"
     }
 }

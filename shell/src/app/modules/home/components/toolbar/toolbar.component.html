@@ -1,6 +1,21 @@
 <div class="toolbar">
     <div class="login-user"></div>
-    <div class="item-list" *ngFor="let item of itemList | async">
+    <div *ngFor="let item of itemList">
         <app-item-image [item]="item"></app-item-image>
     </div>
+    <ng-container *ngIf="showMore">
+        <div *ngFor="let item of moreList">
+            <app-item-image [item]="item"></app-item-image>
+        </div>
+    </ng-container>
+    <div *ngIf="haveNext;else less_temp">
+        <app-item-image [item]="seeMore" (click)="loadMore()">
+        </app-item-image>
+    </div>
+    <ng-template #less_temp>
+        <div>
+            <app-item-image [item]="seeLess" (click)="loadLess()">
+            </app-item-image>
+        </div>
+    </ng-template>
 </div>

@@ -1,4 +1,4 @@
-<div *ngIf="item">
+<div *ngIf="item" class="item-image" click="onClick($event)">
     <img src="/assets/icons/{{item.iconURL}}" alt="{{item.code}}" width="28" height="28">
-    {{ i18n + item.code | translate }}
+    <span class="item-label">{{ i18n + item.code | translate }}</span>
 </div>
