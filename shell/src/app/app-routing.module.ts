@@ -12,7 +12,7 @@ const routes: Routes = [
     }).then(m => m.TestviewModule)
   }, {
     path: '',
-    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule),
+    loadChildren: () => import('./layouts/layouts.module').then(m => m.LayoutsModule),
   }
 ];
 

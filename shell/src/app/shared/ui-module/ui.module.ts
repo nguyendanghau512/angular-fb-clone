@@ -4,7 +4,6 @@ import { ItemImageComponent } from './item-image/item-image.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 
-
 @NgModule({
   declarations: [
     ItemImageComponent
