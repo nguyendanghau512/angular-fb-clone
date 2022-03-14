@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { LayoutsRoutingModule } from './layouts-routing.module';
 import { NewfeedComponent } from './pages/newfeed/newfeed.component';
 import { FeatureHeaderComponent } from './components/header/feature-header/feature-header.component';
+import { UIModule } from '../shared/ui-module/ui.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { FeatureHeaderComponent } from './components/header/feature-header/featu
   ],
   imports: [
     CommonModule,
-    LayoutsRoutingModule
+    LayoutsRoutingModule,
+    UIModule,
+    TranslateModule
   ]
 })
 export class LayoutsModule { }

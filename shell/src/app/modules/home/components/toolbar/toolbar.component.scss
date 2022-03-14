@@ -1,4 +1,7 @@
 .toolbar {
     max-width: 360px;
     min-width: 280px;
+    overflow-y: auto;
+    max-height: 100%;
+    width: fit-content;
 }

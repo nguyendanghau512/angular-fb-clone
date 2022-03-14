@@ -27,5 +27,8 @@
         "weather": "Weather",
         "seeLess": "See less",
         "seeMore": "See more"
+    },
+    "header": {
+        "facebook": "Facebook"
     }
 }

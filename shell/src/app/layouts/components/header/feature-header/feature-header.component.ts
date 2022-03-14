@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-feature-header',
   templateUrl: './feature-header.component.html',
-  styleUrls: ['./feature-header.component.scss']
+  styleUrls: ['./feature-header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FeatureHeaderComponent implements OnInit {
 

@@ -3,20 +3,27 @@
     width: 100%;
     height: 56px;
     display: flex;
-
-    div {
-        position: fixed;
-    }
+    align-items: center;
+    position: fixed;
 
     .search {
+        margin-left: 16px;
+        position: fixed;
         left: 0px;
     }
 
     .account {
+        margin-right: 16px;
+        position: fixed;
         right: 0px;
     }
 
     .feature {
-        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .inline-block {
+        vertical-align: middle;
     }
 }

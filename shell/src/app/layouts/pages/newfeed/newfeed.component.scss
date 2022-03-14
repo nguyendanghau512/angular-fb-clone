@@ -1,4 +1,9 @@
 .new-feed {
     background-color: rgb(243, 243, 243);
     height: 100vh;
+
+    .body {
+        padding-top: 56px;
+        height: calc(100% - 56px);
+    }
 }

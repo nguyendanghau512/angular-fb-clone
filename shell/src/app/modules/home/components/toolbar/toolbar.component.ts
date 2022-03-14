@@ -33,6 +33,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.toolbarService.getToolbarItems(this.defaultItem).subscribe((list) => {
       this.itemList = list;
+      this.cdr.markForCheck();
     })
   }
 
