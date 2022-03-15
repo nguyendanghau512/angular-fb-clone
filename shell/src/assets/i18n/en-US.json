@@ -29,6 +29,7 @@
         "seeMore": "See more"
     },
     "header": {
-        "facebook": "Facebook"
+        "facebook": "Facebook",
+        "searchFacebook": "Search Facebook"
     }
 }
